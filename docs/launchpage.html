@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the body takes full viewport height */
     margin: 0;
     padding: 1rem; /* Add padding for small screens */
     box-sizing: border-box;
@@ -22,10 +22,14 @@
     background-color: #ffffff;
     border-radius: 0.75rem; /* Rounded corners */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    padding: 2.5rem;
+    padding: 8rem 3.5rem; /* Increased vertical padding to make it much taller */
     text-align: center;
-    max-width: 500px; /* Limit width for better readability */
+    max-width: 700px; /* Increased max-width to make it wider */
     width: 100%; /* Ensure it takes full width on small screens */
+    display: flex; /* Use flexbox for vertical centering of content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
   }
   h1 {
     font-size: 2.25rem; /* Larger heading */
@@ -42,8 +46,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem; /* Space between logos */
-    margin-bottom: 2rem;
+    gap: 2.5rem; /* Increased space between logos */
+    margin-bottom: 3rem; /* Increased margin below logos */
     flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
   }
   .logo-item {
@@ -55,50 +59,17 @@
     font-size: 0.875rem;
   }
   .logo-svg {
-    width: 60px; /* Larger SVG size */
-    height: 60px;
-    margin-bottom: 0.5rem;
+    width: 70px; /* Slightly larger SVG size for better detail */
+    height: 70px;
+    margin-bottom: 0.75rem; /* Increased margin below logo */
   }
-  .logo-svg.quickbooks path {
-    fill: #3682c0; /* QuickBooks blue */
-  }
-  .logo-svg.access path {
-    fill: #a4432a; /* MS Access orange-red */
-  }
-  .logo-svg.amb text {
-    fill: #4c51bf; /* A nice purple for AMB */
-    font-size: 36px; /* Adjust font size for AMB text */
-    font-weight: 700;
-  }
+
 </style>
 </head>
 <body>
 <div class="container">
   <div class="logo-container">
-    <div class="logo-item">
-      <!-- QuickBooks Logo (Simplified SVG) -->
-      <svg class="logo-svg quickbooks" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zM10 7h4v2h-4V7zm0 4h4v2h-4v-2zm0 4h4v2h-4v-2z"/>
-      </svg>
-      <span>QuickBooks</span>
-    </div>
 
-    <div class="logo-item">
-      <!-- MS Access Logo (Simplified Database SVG) -->
-      <svg class="logo-svg access" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 10H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8H4v-4h16v4zM20 4H4C2.9 4 2 4.9 2 6v2c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/>
-      </svg>
-      <span>MS Access</span>
-    </div>
-
-    <div class="logo-item">
-      <!-- AMB Logo (Stylized Text SVG) -->
-      <svg class="logo-svg amb" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">AMB</text>
-      </svg>
-      <span>AMB</span>
-    </div>
-  </div>
 
   <h1>Welcome! Your App is Ready.</h1>
   <p>Your MS Access app is now connected with QuickBooks. You can start using it right away.</p>
