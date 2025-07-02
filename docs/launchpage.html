@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Welcome to QuickBooks VBA App</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome to QuickBooks VBA App</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem; /* Add padding for small screens */
+    box-sizing: border-box;
+  }
+  .container {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    text-align: center;
+    max-width: 500px; /* Limit width for better readability */
+    width: 100%; /* Ensure it takes full width on small screens */
+  }
+  h1 {
+    font-size: 2.25rem; /* Larger heading */
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.125rem; /* Slightly larger paragraph text */
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* Space between logos */
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+  }
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  .logo-svg {
+    width: 60px; /* Larger SVG size */
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+  .logo-svg.quickbooks path {
+    fill: #3682c0; /* QuickBooks blue */
+  }
+  .logo-svg.access path {
+    fill: #a4432a; /* MS Access orange-red */
+  }
+  .logo-svg.amb text {
+    fill: #4c51bf; /* A nice purple for AMB */
+    font-size: 36px; /* Adjust font size for AMB text */
+    font-weight: 700;
+  }
+</style>
 </head>
 <body>
-  <h1>Welcome to the QuickBooks VBA Integration</h1>
-  <p>Your app is ready to use.</p>
+<div class="container">
+  <div class="logo-container">
+    <div class="logo-item">
+      <!-- QuickBooks Logo (Simplified SVG) -->
+      <svg class="logo-svg quickbooks" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zM10 7h4v2h-4V7zm0 4h4v2h-4v-2zm0 4h4v2h-4v-2z"/>
+      </svg>
+      <span>QuickBooks</span>
+    </div>
+
+    <div class="logo-item">
+      <!-- MS Access Logo (Simplified Database SVG) -->
+      <svg class="logo-svg access" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 10H4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8H4v-4h16v4zM20 4H4C2.9 4 2 4.9 2 6v2c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/>
+      </svg>
+      <span>MS Access</span>
+    </div>
+
+    <div class="logo-item">
+      <!-- AMB Logo (Stylized Text SVG) -->
+      <svg class="logo-svg amb" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">AMB</text>
+      </svg>
+      <span>AMB</span>
+    </div>
+  </div>
+
+  <h1>Welcome! Your App is Ready.</h1>
+  <p>Your MS Access app is now connected with QuickBooks. You can start using it right away.</p>
+</div>
 </body>
 </html>
