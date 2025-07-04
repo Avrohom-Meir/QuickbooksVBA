@@ -1,10 +1,10 @@
-<!-- Updated launchpage.html -->
+<!-- launchpage.html - Enhanced -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to QuickBooks VBA App</title>
+  <title>QuickBooks VBA Integration</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -19,12 +19,27 @@
       border-radius: 0.75rem;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
       padding: 4rem 2rem;
-      max-width: 700px;
+      max-width: 960px;
       margin: 2rem auto;
       text-align: center;
     }
-    footer {
+    .features {
       margin-top: 2rem;
+      text-align: left;
+    }
+    .features h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 1rem;
+    }
+    .features ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+      color: #374151;
+    }
+    footer {
+      margin-top: 3rem;
       font-size: 0.875rem;
       color: #6b7280;
     }
@@ -33,12 +48,35 @@
       text-decoration: none;
       margin: 0 0.5rem;
     }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome! Your App is Ready.</h1>
-    <p class="text-lg text-gray-600 mb-6">Your MS Access app is now connected with QuickBooks. You can start using it right away.</p>
+    <h1>Welcome to QuickBooks VBA Integration</h1>
+    <p>This platform provides seamless integration between your Microsoft Access applications and QuickBooks Online using secure and supported API methods.</p>
+    <p>Developed by PROPEL SOFTWARE LIMITED, this solution helps automate finance operations and simplifies synchronisation between desktop databases and cloud-based accounting tools.</p>
+
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Real-time syncing of invoices, customers, and payments from Access to QuickBooks.</li>
+        <li>Secure OAuth 2.0 connection and token refresh management.</li>
+        <li>Supports multi-company workflows using Realm ID mapping.</li>
+        <li>Advanced error logging and recovery handling.</li>
+        <li>GDPR-compliant architecture with robust data protection practices.</li>
+        <li>Sandbox environment available for safe development and testing.</li>
+      </ul>
+    </div>
 
     <footer>
       <a href="privacy.html">Privacy Policy</a> |
