@@ -6,6 +6,8 @@
 <title>QuickBooks VBA Integration - Launch Page</title>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+
 <style>
   /* Reset */
   * {
@@ -15,8 +17,8 @@
   body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-    color: #ffffff;
+    background-color: #ffffff; /* white background outside the card */
+    color: #0d1b2a; /* dark navy for default text */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,17 +27,17 @@
   }
 
   .container {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background-color: #e3f2fd; /* light blue card background */
     padding: 50px 60px;
     border-radius: 18px;
     max-width: 750px;
     box-shadow:
-      0 10px 25px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(255, 255, 255, 0.1);
+      0 10px 25px rgba(0, 0, 0, 0.1),
+      0 5px 10px rgba(0, 0, 0, 0.05);
     line-height: 1.65;
     text-align: left;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #bbdefb; /* soft blue border */
+    color: #0d1b2a; /* dark text */
   }
 
   h1 {
@@ -43,23 +45,32 @@
     font-size: 3rem;
     letter-spacing: 1.5px;
     margin-bottom: 2rem;
-    color: #FDE68A; /* warm gold */
+    color: #0d47a1; /* deep blue */
     text-align: center;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1565c0; /* strong blue for section headers */
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid #64b5f6;
+    padding-bottom: 0.35rem;
   }
 
   p {
     font-weight: 400;
     font-size: 1.18rem;
     margin-bottom: 1.5rem;
-    color: #E0E7FF; /* light lavender */
+    color: #263238; /* dark grey-blue for body text */
   }
 
   ul {
     list-style-type: disc;
     margin-left: 1.8rem;
     margin-bottom: 1.8rem;
-    color: #C7D2FE; /* softer lavender */
+    color: #263238; /* match paragraph text color */
   }
 
   ul li {
@@ -68,7 +79,7 @@
   }
 
   a {
-    color: #FBBF24; /* amber yellow */
+    color: #1e88e5; /* link blue */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -76,24 +87,13 @@
 
   a:hover,
   a:focus {
-    color: #EF4444; /* bright red */
+    color: #0d47a1;
     outline: none;
   }
 
   strong {
-    color: #FDE68A;
-  }
-
-  /* Section Headers */
-  h2 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: #A5B4FC; /* soft periwinkle */
-    margin-top: 3.2rem;
-    margin-bottom: 1.2rem;
-    border-bottom: 3px solid #C7D2FE;
-    padding-bottom: 0.35rem;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    color: #0d1b2a;
+    font-weight: bold;
   }
 
   /* Responsive */
@@ -122,6 +122,8 @@
     }
   }
 </style>
+
+  
 </head>
 <body>
   <div class="container" role="main" aria-label="QuickBooks VBA Integration Launch Page">
