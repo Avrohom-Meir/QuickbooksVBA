@@ -2,11 +2,139 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>QuickBooks VBA Integration - Launch Page</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 40px 50px;
+    border-radius: 15px;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 2.75rem;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #ffd166;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+  }
+
+  a:hover,
+  a:focus {
+    color: #ef476f;
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90vw;
+      padding: 30px 25px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
 </head>
 <body>
-<h1>Welcome to QuickBooks VBA Integration</h1>
-<p>This is the launch page for the QuickBooks VBA integration app.</p>
-<p><a href="privacy.html">Privacy Policy</a> | <a href="eula.html">End User License Agreement</a></p>
+  <div class="container">
+    <h1>Welcome to QuickBooks VBA Integration</h1>
+    
+    <p>
+      This launch page serves as the gateway to a powerful integration solution designed to bridge Microsoft Access VBA applications with QuickBooks accounting software. Our goal is to empower businesses and developers with streamlined, automated workflows that harness the strengths of both platforms.
+    </p>
+
+    <p>
+      QuickBooks VBA Integration offers a comprehensive set of tools that enable you to seamlessly read, write, and manipulate QuickBooks data directly through VBA code. Whether you are looking to synchronize invoices, manage customers, track payments, or generate custom financial reports, this integration provides robust APIs and carefully designed modules to simplify these complex tasks.
+    </p>
+
+    <p>
+      By combining the flexibility of Microsoft Access as a database and VBA as a programming environment with QuickBooks’ leading accounting system, your organization can eliminate manual data entry, reduce human errors, and accelerate business processes. This integration is particularly valuable for accountants, finance managers, and developers looking for tailored solutions to specific business needs.
+    </p>
+
+    <p>
+      Key Features:
+      <ul>
+        <li>Secure and reliable connection to QuickBooks company files via OAuth 2.0 authentication.</li>
+        <li>Full CRUD (Create, Read, Update, Delete) support for invoices, customers, payments, and other key entities.</li>
+        <li>Extensive error handling and logging mechanisms to ensure data integrity.</li>
+        <li>Customizable workflows tailored to your business logic, triggered directly from VBA code.</li>
+        <li>Support for QuickBooks Online and Desktop editions with appropriate API connectors.</li>
+      </ul>
+    </p>
+
+    <p>
+      Getting Started:
+      <br />
+      To begin using the QuickBooks VBA Integration, ensure you have the necessary API credentials and tokens from your QuickBooks developer account. Integration requires proper authorization scopes to read and modify data, so make sure the authentication process is completed securely. Our documentation provides detailed steps on how to register your app, obtain tokens, and setup connections within your VBA environment.
+    </p>
+
+    <p>
+      Best Practices:
+      <br />
+      For optimal performance and security, always follow these guidelines:
+      <ul>
+        <li>Use secure storage mechanisms for access tokens and refresh tokens.</li>
+        <li>Regularly update your credentials and maintain compliance with QuickBooks API policies.</li>
+        <li>Implement retry logic to gracefully handle transient errors or API rate limits.</li>
+        <li>Thoroughly test your VBA scripts in sandbox or development environments before deploying to production.</li>
+      </ul>
+    </p>
+
+    <p>
+      Support & Resources:
+      <br />
+      Our team is committed to providing ongoing support to ensure your integration remains seamless. Access our knowledge base, sample code repositories, and community forums to stay up to date with the latest best practices and feature releases.
+    </p>
+
+    <p>
+      Thank you for choosing QuickBooks VBA Integration. We are excited to help you unlock new efficiencies and achieve greater business insights.
+    </p>
+
+    <p style="text-align:center; margin-top: 40px;">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="eula.html">End User License Agreement</a>
+    </p>
+  </div>
 </body>
 </html>
