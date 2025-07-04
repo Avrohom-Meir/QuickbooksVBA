@@ -3,187 +3,119 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>QuickBooks VBA Integration - Launch Page</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<title>QuickBooks VBA Integration</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 <style>
-  :root {
-    --color-primary: #3f51b5;
-    --color-primary-light: #757de8;
-    --color-secondary: #009688;
-    --color-secondary-light: #52c7b8;
-    --color-accent: #ff9800;
-    --color-background: #f9fafb;
-    --color-text-primary: #1e293b;
-    --color-text-secondary: #475569;
-  }
-
   body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--color-background);
     margin: 0;
-    padding: 2.5rem 1rem;
-    color: var(--color-text-primary);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #4b6cb7; /* Kadence blue */
+    color: #fff;
   }
 
-  .container {
-    background: #ffffff;
-    max-width: 720px;
-    width: 100%;
-    padding: 3rem 3.5rem;
-    border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    line-height: 1.7;
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background-color: #5f72be;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   }
 
   h1 {
-    font-weight: 600;
-    font-size: 2.75rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-primary);
+    font-size: 2.2rem;
     text-align: center;
+    color: #ffe082;
+    margin-bottom: 30px;
   }
 
   h2 {
-    font-weight: 600;
     font-size: 1.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--color-text-primary);
-    border-bottom: 2px solid var(--color-primary-light);
-    padding-bottom: 0.3rem;
+    margin-top: 30px;
+    color: #fff59d;
+    border-bottom: 2px solid #fff176;
+    padding-bottom: 5px;
   }
 
   p {
-    font-size: 1.125rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f3f4f6;
   }
 
   ul {
-    list-style-type: disc;
-    padding-left: 1.6rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.75rem;
+    margin-left: 20px;
+    color: #e0e7ff;
   }
 
   ul li {
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    margin-bottom: 10px;
   }
 
   a {
-    color: var(--color-secondary);
+    color: #ffd54f;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: 600;
   }
 
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-    outline: none;
+  a:hover {
+    color: #ffca28;
   }
 
-  footer {
+  .footer {
     text-align: center;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
+    margin-top: 40px;
+    font-size: 0.95rem;
   }
 
-  footer a {
-    margin: 0 0.75rem;
-  }
-
-  @media (max-width: 768px) {
-    .container {
-      padding: 2rem 2rem;
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      padding: 20px;
     }
+
     h1 {
-      font-size: 2.25rem;
-    }
-    h2 {
-      font-size: 1.3rem;
-    }
-    p, ul li {
-      font-size: 1rem;
+      font-size: 1.8rem;
     }
   }
 </style>
 </head>
 <body>
-  <main class="container" role="main" aria-label="QuickBooks VBA Integration Launch Page">
+  <div class="wrapper">
     <h1>Welcome to QuickBooks VBA Integration</h1>
 
     <p>
-      Thank you for choosing our QuickBooks VBA Integration platform. We are excited to help you streamline your financial management by seamlessly connecting your Microsoft Access database with QuickBooks Online.
+      You have successfully connected your Microsoft Access application with QuickBooks Online.
+      This integration lets you seamlessly manage financial data — from invoices and payments to customer records — all within your Access environment.
     </p>
 
+    <h2>What’s Next?</h2>
     <p>
-      Managing your accounting data manually can be time-consuming and prone to mistakes. This integration automates your routine tasks, ensuring your financial information is always accurate and up to date without extra effort on your part.
+      You're now ready to begin syncing your data, managing financial workflows, and using the full features available to you. No more manual entry. No more switching between systems.
     </p>
 
-    <h2>What This Integration Does For You</h2>
-    <p>
-      Our solution bridges your desktop Access applications and the cloud-based QuickBooks accounting platform, making data flow effortless and reliable. Here’s what you gain:
-    </p>
+    <h2>Key Features</h2>
     <ul>
-      <li><strong>Real-Time Syncing:</strong> Invoices, payments, customers, and other financial data synchronize automatically between Access and QuickBooks.</li>
-      <li><strong>Reduced Errors:</strong> Minimize manual entry and eliminate discrepancies with automated data transfer.</li>
-      <li><strong>Improved Efficiency:</strong> Save hours of work every week by letting the integration handle repetitive tasks.</li>
-      <li><strong>Multi-Company Management:</strong> Manage multiple QuickBooks company files seamlessly through our integration.</li>
-      <li><strong>Secure & Compliant:</strong> Your data is protected with the highest standards of security and compliance.</li>
+      <li>Automatic syncing of invoices and customer data</li>
+      <li>Simple and secure OAuth login</li>
+      <li>Multi-company support with Realm ID control</li>
+      <li>Advanced error handling and logs</li>
+      <li>Test environment support</li>
     </ul>
 
-    <h2>How It Works</h2>
-    <p>
-      After you authorize your QuickBooks account, the platform establishes a secure connection using OAuth 2.0 authentication. This ensures your credentials remain safe while allowing the integration to access and update your financial data as needed.
-    </p>
-
-    <p>
-      Once connected, you can synchronize invoices, customers, and payments automatically or on-demand — whichever fits your business workflow best. Changes made in either system are reflected quickly to maintain consistency.
-    </p>
-
-    <h2>Getting Started Is Easy</h2>
-    <p>
-      To begin, simply connect your QuickBooks Online account securely through our authorization process. Once connected, the integration will start syncing data according to your preferences.
-    </p>
-
-    <p>
-      No programming skills or complex setups are required on your part. Our system handles everything behind the scenes to give you a smooth experience.
-    </p>
-
-    <h2>Tips for Success</h2>
+    <h2>Tips</h2>
     <ul>
-      <li>Regularly check synchronization status and logs to confirm all data is updating correctly.</li>
-      <li>Reach out to our support team whenever you need guidance or help optimizing your setup.</li>
+      <li>Always keep a backup of your Access database</li>
+      <li>Use the sandbox mode to safely test new features</li>
+      <li>Store your tokens securely</li>
+      <li>Reach out to support if anything isn’t working as expected</li>
     </ul>
 
-    <h2>Support & Resources</h2>
-    <p>
-      We’re dedicated to helping you succeed. You can review our <a href="privacy.html">Privacy Policy</a> and <a href="eula.html">End User License Agreement</a> anytime to understand how your data is managed securely.
+    <p class="footer">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="eula.html">EULA</a>
     </p>
-
-    <p>
-      For any questions, troubleshooting, or personalized assistance, our support team is ready to help. Simply contact us and we’ll guide you every step of the way.
-    </p>
-
-    <h2>About PROPEL SOFTWARE LIMITED</h2>
-    <p>
-      PROPEL SOFTWARE LIMITED is committed to providing innovative solutions that simplify business processes and empower organizations to work smarter. Our QuickBooks VBA Integration is part of our mission to deliver tools that help you succeed efficiently and securely.
-    </p>
-
-    <p>
-      Thank you for trusting us with your financial management needs. We look forward to supporting your business growth with seamless, reliable integration.
-    </p>
-
-    <footer>
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="eula.html">End User License Agreement</a>
-    </footer>
-  </main>
+  </div>
 </body>
 </html>
