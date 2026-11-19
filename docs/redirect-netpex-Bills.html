@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickBooks Authorization</title>
+</head>
+<body style="font-family:Arial; text-align:center; padding:50px;">
+
+    <h2>QuickBooks Authorization</h2>
+
+    <p>Authorization callback received.</p>
+
+    <p>You can now return to Microsoft Access.</p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.has("error")) {
+            document.querySelector("p").textContent =
+                "QuickBooks authorization was not completed.";
+        } else if (!params.has("code") || !params.has("realmId")) {
+            document.querySelector("p").textContent =
+                "No authorization code was received.";
+        }
+    </script>
+
+</body>
+</html>
